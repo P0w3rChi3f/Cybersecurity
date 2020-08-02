@@ -38,7 +38,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat periodically collects metrics from an operating stystem and from services running on a server.  It takes the metrics and statistics it collects and ships them to specified output, such as Elasticsearch or Logstash.  [See elasticsearch.co/guide]_
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name      | Function  | IP Address | Operating System |
 |-----------|-----------|------------|------------------|
