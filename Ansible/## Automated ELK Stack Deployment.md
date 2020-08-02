@@ -53,7 +53,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-box-provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address(es):
-- 72.66.46.247_
+- 72.66.46.247
 
 Machines within the network can only be accessed by SSH.
 - The Elk VM can be accessed from the Ansible container on the Jump-box-provisioner (52.249.188.139; 10.0.0.4)._
@@ -74,10 +74,10 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- This approach employs Infrastructure as code (IaC), which allows each component to be individually defined with code.  So, from a security standpoint, we can quickly bring a particular piece of infrastructure up and running within a few minutes by running the code that defines the piece of infrastructure.  Conversely, if the infrastructure is compromised, we can destroy it and deploy a new version within minutes.  As such, we can clearly build in security protocols from the ground up._
+- This approach employs Infrastructure as code (IaC), which allows each component to be individually defined with code.  So, from a security standpoint, we can quickly bring a particular piece of infrastructure up and running within a few minutes by running the code that defines the piece of infrastructure.  Conversely, if the infrastructure is compromised, we can destroy it and deploy a new version within minutes.  As such, we can clearly build in security protocols from the ground up.
 
 The playbook implements the following tasks:
-- Specify targets using the hosts option to specify that the playbook tasks should only be run on the machines in the elk group._
+- Specify targets using the hosts option to specify that the playbook tasks should only be run on the machines in the elk group.
 - Run sysctl -w vm.max_map_count=262144 to configure the target VM to use more memory.
 - Run shell: echo "vm.max_map_count=262144" >> /etc/sysctl.conf so that the target VM is automatically configured if the VM has been restarted.
 - Install the Docker engine to run containers, and the pip package used to install Python software using the apt command.
@@ -86,7 +86,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![/Desktop/GitHub/Cybersecurity/Ansible/Docker_ps_output.png
+!https://drive.google.com/file/d/1myrXXfy-PKB8bdBgAbIGQOEpfkhdp7Qr/view?usp=sharing
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
